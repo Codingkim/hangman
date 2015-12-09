@@ -1,0 +1,32 @@
+puts "would you like to play hangman?"
+respons = gets
+if respons.strip == "yes" 
+	puts "let's play!"
+else respons.strip == "no"
+	puts "ahh to bad" 
+	exit
+end
+
+puts "Give me a 3 lettre word"
+sun = gets
+if sun.strip == "sun"
+	puts "great! You win!"
+	exit 
+else 
+	puts "wrong answer, try again! Tip: try the letter S"
+end
+
+sun = gets
+	if sun.strip == "sun"
+		puts "great! You win!"
+		exit 
+	else
+		puts "wrong answer, the second letter is U"
+end
+sun = gets
+if sun.strip == "sun"
+	puts "great! You win!"
+	exit
+else 
+	puts "loser"
+end
